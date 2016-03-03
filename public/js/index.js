@@ -19748,6 +19748,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
+
 	var routes = _react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.hashHistory },
@@ -25070,6 +25074,10 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
+
 	var Welcome = function (_Component) {
 		_inherits(Welcome, _Component);
 
@@ -25152,6 +25160,10 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _backends = [{ id: 1, name: "Rolando Tigre Sipion1", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 2, name: "Rolando Tigre Sipion2", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 3, name: "Rolando Tigre Sipion3", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 4, name: "Rolando Tigre Sipion4", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 5, name: "Rolando Tigre Sipion5", title: "Back-End", department: "systems", picture: "img2.png" }];
+
+	//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
 
 	var Backends = function (_Component) {
 		_inherits(Backends, _Component);
@@ -25417,6 +25429,10 @@
 
 	var _frontends = [{ id: 1, name: "Oscar Capuñay Uceda1", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 2, name: "Oscar Capuñay Uceda2", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 3, name: "Oscar Capuñay Uceda3", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 4, name: "Oscar Capuñay Uceda4", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 5, name: "Oscar Capuñay Uceda5", title: "Front-End", department: "systems", picture: "img3.png" }];
 
+	//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
+
 	var Frontends = function (_Component) {
 		_inherits(Frontends, _Component);
 
@@ -25496,6 +25512,10 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _developers = [{ id: 1, name: "Pisfil Puemape Armando1", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 2, name: "Pisfil Puemape Armando2", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 3, name: "Pisfil Puemape Armando3", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 4, name: "Pisfil Puemape Armando4", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 5, name: "Pisfil Puemape Armando5", title: "Developer", department: "systems", picture: "img1.jpg" }];
+
+	//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
 
 	var Developers = function (_Component) {
 		_inherits(Developers, _Component);

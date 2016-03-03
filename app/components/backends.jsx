@@ -10,6 +10,10 @@ var _backends = [
   { id: 5, name: "Rolando Tigre Sipion5", title: "Back-End", department: "systems", picture: "img2.png" }
 ]
 
+//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
+
 class Backends extends Component{
 	render() {
 		return (
@@ -17,7 +21,7 @@ class Backends extends Component{
 				<h2>BACKENDS</h2>
 
 				<List listado={_backends} />
-				
+
 				<Link to='/'>{'Welcome'}</Link>
 				<br />
 				<Link to='/developer'>{'Developer'}</Link>

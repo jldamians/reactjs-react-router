@@ -10,12 +10,16 @@ var _developers = [
   { id: 5, name: "Pisfil Puemape Armando5", title: "Developer", department: "systems", picture: "img1.jpg" }
 ]
 
+//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
+
 class Developers extends Component {
 	render() {
 		return (
 			<section>
 				<h2>DEVELOPERS</h2>
-				
+
 				<List listado={_developers} />
 
 				<Link to='/'>{'Welcome'}</Link>

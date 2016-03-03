@@ -10,6 +10,10 @@ var _frontends = [
   { id: 5, name: "Oscar Capuñay Uceda5", title: "Front-End", department: "systems", picture: "img3.png" }
 ]
 
+//see references:
+	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
+	// http://rockyj.in/2015/12/31/react_routers_comparison.html
+
 class Frontends extends Component {
 	render() {
 		return (
@@ -17,7 +21,7 @@ class Frontends extends Component {
 				<h2>FRONTEND</h2>
 
 				<List listado={_frontends} />
-				
+
 				<Link to='/'>{'Welcome'}</Link>
 				<br />
 				<Link to='/developer'>{'Developer'}</Link>
