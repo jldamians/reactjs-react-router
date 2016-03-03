@@ -14,6 +14,9 @@ var _developers = [
 	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
 	// http://rockyj.in/2015/12/31/react_routers_comparison.html
 
+// Link: Este componente es la principal manera de permitir a los usuario 
+// navegar alrededor de su aplicacion
+
 class Developers extends Component {
 	render() {
 		return (
