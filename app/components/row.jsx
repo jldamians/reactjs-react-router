@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Avatar from './avatar'
 
-class Row extends React.Component{
+class Row extends Component{
 	render() {
 		return(
 			<li className='media'>

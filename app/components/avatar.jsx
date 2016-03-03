@@ -1,8 +1,6 @@
-import React from 'react';
-//import React, { Component } from 'react';
+import React, { Component } from 'react';
 
-class Avatar extends React.Component {
-//class Avatar extends Component{
+class Avatar extends Component {
 	render(){
 		return(
 			<figure className="media-left">

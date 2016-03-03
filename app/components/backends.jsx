@@ -1,8 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from 'react'
 import List from './list'
 
-var backends = [
+var _backends = [
   { id: 1, name: "Rolando Tigre Sipion1", title: "Back-End", department: "systems", picture: "img2.png" },
   { id: 2, name: "Rolando Tigre Sipion2", title: "Back-End", department: "systems", picture: "img2.png" },
   { id: 3, name: "Rolando Tigre Sipion3", title: "Back-End", department: "systems", picture: "img2.png" },
@@ -10,5 +9,10 @@ var backends = [
   { id: 5, name: "Rolando Tigre Sipion5", title: "Back-End", department: "systems", picture: "img2.png" }
 ]
 
-ReactDOM.render(<List listado={backends} />, document.getElementById('app'))
+class Backends extends Component{
+	render() {
+		return <List listado={_backends} />
+	}
+}
 
+export default Backends

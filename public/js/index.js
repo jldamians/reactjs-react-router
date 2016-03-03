@@ -25082,13 +25082,15 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(158);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
 
 	var _list = __webpack_require__(218);
 
@@ -25096,9 +25098,34 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var backends = [{ id: 1, name: "Rolando Tigre Sipion1", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 2, name: "Rolando Tigre Sipion2", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 3, name: "Rolando Tigre Sipion3", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 4, name: "Rolando Tigre Sipion4", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 5, name: "Rolando Tigre Sipion5", title: "Back-End", department: "systems", picture: "img2.png" }];
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	_reactDom2.default.render(_react2.default.createElement(_list2.default, { listado: backends }), document.getElementById('app'));
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _backends = [{ id: 1, name: "Rolando Tigre Sipion1", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 2, name: "Rolando Tigre Sipion2", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 3, name: "Rolando Tigre Sipion3", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 4, name: "Rolando Tigre Sipion4", title: "Back-End", department: "systems", picture: "img2.png" }, { id: 5, name: "Rolando Tigre Sipion5", title: "Back-End", department: "systems", picture: "img2.png" }];
+
+	var Backends = function (_Component) {
+	  _inherits(Backends, _Component);
+
+	  function Backends() {
+	    _classCallCheck(this, Backends);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Backends).apply(this, arguments));
+	  }
+
+	  _createClass(Backends, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_list2.default, { listado: _backends });
+	    }
+	  }]);
+
+	  return Backends;
+	}(_react.Component);
+
+	exports.default = Backends;
 
 /***/ },
 /* 218 */
@@ -25189,8 +25216,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Row = function (_React$Component) {
-		_inherits(Row, _React$Component);
+	var Row = function (_Component) {
+		_inherits(Row, _Component);
 
 		function Row() {
 			_classCallCheck(this, Row);
@@ -25231,7 +25258,7 @@
 		}]);
 
 		return Row;
-	}(_react2.default.Component);
+	}(_react.Component);
 
 	exports.default = Row;
 
@@ -25259,10 +25286,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	//import React, { Component } from 'react';
-
-	var Avatar = function (_React$Component) {
-		_inherits(Avatar, _React$Component);
+	var Avatar = function (_Component) {
+		_inherits(Avatar, _Component);
 
 		function Avatar() {
 			_classCallCheck(this, Avatar);
@@ -25272,8 +25297,6 @@
 
 		_createClass(Avatar, [{
 			key: "render",
-
-			//class Avatar extends Component{
 			value: function render() {
 				return _react2.default.createElement(
 					"figure",
@@ -25284,7 +25307,7 @@
 		}]);
 
 		return Avatar;
-	}(_react2.default.Component);
+	}(_react.Component);
 
 	exports.default = Avatar;
 
@@ -25294,13 +25317,15 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(158);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
 
 	var _list = __webpack_require__(218);
 
@@ -25308,9 +25333,34 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var frontends = [{ id: 1, name: "Oscar Capuñay Uceda1", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 2, name: "Oscar Capuñay Uceda2", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 3, name: "Oscar Capuñay Uceda3", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 4, name: "Oscar Capuñay Uceda4", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 5, name: "Oscar Capuñay Uceda5", title: "Front-End", department: "systems", picture: "img3.png" }];
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	_reactDom2.default.render(_react2.default.createElement(_list2.default, { listado: frontends }), document.getElementById('app'));
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _frontends = [{ id: 1, name: "Oscar Capuñay Uceda1", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 2, name: "Oscar Capuñay Uceda2", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 3, name: "Oscar Capuñay Uceda3", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 4, name: "Oscar Capuñay Uceda4", title: "Front-End", department: "systems", picture: "img3.png" }, { id: 5, name: "Oscar Capuñay Uceda5", title: "Front-End", department: "systems", picture: "img3.png" }];
+
+	var Frontends = function (_Component) {
+	  _inherits(Frontends, _Component);
+
+	  function Frontends() {
+	    _classCallCheck(this, Frontends);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Frontends).apply(this, arguments));
+	  }
+
+	  _createClass(Frontends, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_list2.default, { listado: _frontends });
+	    }
+	  }]);
+
+	  return Frontends;
+	}(_react.Component);
+
+	exports.default = Frontends;
 
 /***/ },
 /* 222 */
@@ -25318,13 +25368,15 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(158);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
 
 	var _list = __webpack_require__(218);
 
@@ -25332,9 +25384,34 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var developers = [{ id: 1, name: "Pisfil Puemape Armando1", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 2, name: "Pisfil Puemape Armando2", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 3, name: "Pisfil Puemape Armando3", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 4, name: "Pisfil Puemape Armando4", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 5, name: "Pisfil Puemape Armando5", title: "Developer", department: "systems", picture: "img1.jpg" }];
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	_reactDom2.default.render(_react2.default.createElement(_list2.default, { listado: developers }), document.getElementById('app'));
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _developers = [{ id: 1, name: "Pisfil Puemape Armando1", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 2, name: "Pisfil Puemape Armando2", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 3, name: "Pisfil Puemape Armando3", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 4, name: "Pisfil Puemape Armando4", title: "Developer", department: "systems", picture: "img1.jpg" }, { id: 5, name: "Pisfil Puemape Armando5", title: "Developer", department: "systems", picture: "img1.jpg" }];
+
+	var Developers = function (_Component) {
+	  _inherits(Developers, _Component);
+
+	  function Developers() {
+	    _classCallCheck(this, Developers);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Developers).apply(this, arguments));
+	  }
+
+	  _createClass(Developers, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(_list2.default, { listado: _developers });
+	    }
+	  }]);
+
+	  return Developers;
+	}(_react.Component);
+
+	exports.default = Developers;
 
 /***/ }
 /******/ ]);

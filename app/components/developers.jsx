@@ -1,8 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React, {Component} from 'react'
 import List from './list'
 
-var developers = [
+var _developers = [
   { id: 1, name: "Pisfil Puemape Armando1", title: "Developer", department: "systems", picture: "img1.jpg" },
   { id: 2, name: "Pisfil Puemape Armando2", title: "Developer", department: "systems", picture: "img1.jpg" },
   { id: 3, name: "Pisfil Puemape Armando3", title: "Developer", department: "systems", picture: "img1.jpg" },
@@ -10,5 +9,12 @@ var developers = [
   { id: 5, name: "Pisfil Puemape Armando5", title: "Developer", department: "systems", picture: "img1.jpg" }
 ]
 
-ReactDOM.render(<List listado={developers} />, document.getElementById('app'))
+class Developers extends Component {
+	render() {
+		return <List listado={_developers} />
+	}
+}
+
+export default Developers
+
 
