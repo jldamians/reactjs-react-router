@@ -19,7 +19,15 @@ import React from 'react'
  * Entonces de esto '/developer?_k=7txep7' pasaremos a esto '/developers'
  */
 
+ /*
+  * history: Encapsula la navegacion entre las diferentes pantallas
+  * y permite notificar a los oyentes cuando cambia la pantalla actual
+  */
+
 import { Router, Route, useRouterHistory } from 'react-router'
+
+// see references: 
+	// https://github.com/mjackson/history/blob/master/docs/GettingStarted.md
 import { createHashHistory } from 'history'
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })

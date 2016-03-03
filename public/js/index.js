@@ -19721,7 +19721,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -19768,19 +19768,28 @@
 	 * Entonces de esto '/developer?_k=7txep7' pasaremos a esto '/developers'
 	 */
 
+	/*
+	 * history: Encapsula la navegacion entre las diferentes pantallas
+	 * y permite notificar a los oyentes cuando cambia la pantalla actual
+	 */
+
 	var appHistory = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({ queryKey: false });
+
+	// see references:
+	// https://github.com/mjackson/history/blob/master/docs/GettingStarted.md
+
 
 	//see references:
 	// https://shellmonger.com/2016/02/05/an-introduction-to-react-router/
 	// http://rockyj.in/2015/12/31/react_routers_comparison.html
 
 	var routes = _react2.default.createElement(
-	    _reactRouter.Router,
-	    { history: appHistory },
-	    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _welcome2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'developer', component: _developers2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'backend', component: _backends2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'frontend', component: _frontends2.default })
+	  _reactRouter.Router,
+	  { history: appHistory },
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _welcome2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: 'developer', component: _developers2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: 'backend', component: _backends2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: 'frontend', component: _frontends2.default })
 	);
 
 	exports.default = routes;
