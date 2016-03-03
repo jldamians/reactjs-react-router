@@ -7,9 +7,13 @@ class Row extends Component{
 			<li className='media'>
 				<Avatar picture={this.props.picture} />
 				<div className='media-body'>
-					<h4>{this.props.name} / {this.props.title}</h4>
+					<h4>{this.props.name}</h4>
+
 					<p>
-						<span className='label label-info'>{this.props.departament}</span>
+						<span>Puesto Laboral: {this.props.title}</span>
+					</p>
+					<p>
+						<span>Area de Trabajo: {this.props.department}</span>
 					</p>
 				</div>
 				<hr/>

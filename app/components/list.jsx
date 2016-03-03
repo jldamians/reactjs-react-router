@@ -12,7 +12,7 @@ class List extends Component{
                                     name={empleado.name} 
                                     picture={empleado.picture} 
                                     title={empleado.title} 
-                                    departament={empleado.departament} 
+                                    department={empleado.department} 
                                 />
                     })
                 }

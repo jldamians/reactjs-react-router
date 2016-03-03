@@ -25262,7 +25262,7 @@
 	                        name: empleado.name,
 	                        picture: empleado.picture,
 	                        title: empleado.title,
-	                        departament: empleado.departament
+	                        department: empleado.department
 	                    });
 	                })
 	            );
@@ -25324,17 +25324,26 @@
 						_react2.default.createElement(
 							'h4',
 							null,
-							this.props.name,
-							' / ',
-							this.props.title
+							this.props.name
 						),
 						_react2.default.createElement(
 							'p',
 							null,
 							_react2.default.createElement(
 								'span',
-								{ className: 'label label-info' },
-								this.props.departament
+								null,
+								'Puesto Laboral: ',
+								this.props.title
+							)
+						),
+						_react2.default.createElement(
+							'p',
+							null,
+							_react2.default.createElement(
+								'span',
+								null,
+								'Area de Trabajo: ',
+								this.props.department
 							)
 						)
 					),
