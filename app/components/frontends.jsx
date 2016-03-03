@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 import List from './list'
 
 var _frontends = [
@@ -11,7 +12,20 @@ var _frontends = [
 
 class Frontends extends Component {
 	render() {
-		return <List listado={_frontends} />
+		return (
+			<section>
+				<h2>FRONTEND</h2>
+
+				<List listado={_frontends} />
+				
+				<Link to='/'>{'Welcome'}</Link>
+				<br />
+				<Link to='/developer'>{'Developer'}</Link>
+				<br />
+				<Link to='/backend'>{'Backend'}</Link>
+				<br />
+			</section>
+		)
 	}
 }
 
