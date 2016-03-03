@@ -54,35 +54,13 @@
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _welcome = __webpack_require__(216);
+	var _routes = __webpack_require__(223);
 
-	var _welcome2 = _interopRequireDefault(_welcome);
-
-	var _backends = __webpack_require__(217);
-
-	var _backends2 = _interopRequireDefault(_backends);
-
-	var _frontends = __webpack_require__(221);
-
-	var _frontends2 = _interopRequireDefault(_frontends);
-
-	var _developers = __webpack_require__(222);
-
-	var _developers2 = _interopRequireDefault(_developers);
+	var _routes2 = _interopRequireDefault(_routes);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _reactDom.render)(_react2.default.createElement(
-		_reactRouter.Router,
-		{ history: _reactRouter.browserHistory },
-		_react2.default.createElement(
-			_reactRouter.Route,
-			{ path: '/', component: _welcome2.default },
-			_react2.default.createElement(_reactRouter.Route, { path: 'developers', component: _developers2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'frontends', component: _frontends2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'backends', component: _backends2.default })
-		)
-	), document.getElementById('app'));
+	console.log((0, _routes2.default)());
 
 /***/ },
 /* 1 */
@@ -25412,6 +25390,54 @@
 	}(_react.Component);
 
 	exports.default = Developers;
+
+/***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	var _welcome = __webpack_require__(216);
+
+	var _welcome2 = _interopRequireDefault(_welcome);
+
+	var _backends = __webpack_require__(217);
+
+	var _backends2 = _interopRequireDefault(_backends);
+
+	var _frontends = __webpack_require__(221);
+
+	var _frontends2 = _interopRequireDefault(_frontends);
+
+	var _developers = __webpack_require__(222);
+
+	var _developers2 = _interopRequireDefault(_developers);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function () {
+	    return _react2.default.createElement(
+	        _reactRouter.Router,
+	        null,
+	        _react2.default.createElement(
+	            _reactRouter.Route,
+	            { path: '/', component: _welcome2.default },
+	            _react2.default.createElement(_reactRouter.Route, { path: 'developer', component: _developers2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: 'frontend', component: _frontends2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: 'backend', component: _backends2.default })
+	        )
+	    );
+	};
 
 /***/ }
 /******/ ]);
